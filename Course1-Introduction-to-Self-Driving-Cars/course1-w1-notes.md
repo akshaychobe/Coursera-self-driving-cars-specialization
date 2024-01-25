@@ -53,7 +53,7 @@ By the end of this course :
 ---
 - **Course Prerequisites: Knowledge, Hardware & Software**
 
-  - [Prerequisites notes](https://github.com/afondiel/Self-Driving-Cars-Specialization-Coursera/blob/main/Course1-Introduction-to-Self-Driving-Cars/resources/Course-Prerequisites-Knowledge-Hardware-Software.md)
+  - [Prerequisites notes]([https://github.com/afondiel/Self-Driving-Cars-Specialization-Coursera/blob/main/Course1-Introduction-to-Self-Driving-Cars/resources/Course-Prerequisites-Knowledge-Hardware-Software.md](https://www.coursera.org/learn/intro-self-driving-cars/supplement/ZHBuC/course-prerequisites-knowledge-hardware-software))
 
 ---
 - **The Story of Autonomous Vehicles**
