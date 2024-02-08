@@ -103,21 +103,21 @@ Major Hazard Sources :
 
 ### Lesson 2: Industry Methods for Safety Assurance and Testing
 
-**Waymo safety Perpective (released in 2017**
-- Waymo coverage all 12 part of NHTSA but organizes them into 5 level safety approach
-  - `Behavioral Safety` : wide range of scanarios within the ODD and maintain vehicle safety through it.
+**Waymo safety Perspective (released in 2017)**
+- Waymo covers all 12 parts of NHTSA but organizes them into 5 level safety approach
+  - `Behavioral Safety` : wide range of scenarios within the ODD and maintain vehicle safety through it.
   - `Functional Safety` : the systems have backups and redundancies allowing the car to switch into a secondary component or a backup process to minimize the severity of failures and return the vehicle to a safe state
   - `Crash Safety` : to ensure minimum damage to people inside the car during a crash
-  - `Operational Safety` : interfaces are usable and convenient and intuitive. Allowing the passengers to have some level of control over the vehicle but in ways that maintain system safety
-  - `Non collision safety` : minime the danger to people that may interact with the systemin some ways : first responders, mechanics, Engineers and so on 
+  - `Operational Safety` : interfaces are usable and convenient and intuitive. Allowing the passengers to have some level of control over the vehicle but only in ways that maintain system safety
+  - `Non collision safety` : minimize the danger to people that may interact with the system in some ways : first responders, mechanics, Engineers, and so on 
 
 **Waymo: Safety Processes**
-- Identify hazard scenarions & potential mitigations (attenuations)
+- Identify hazard scenarios & potential mitigations (attenuations)
 - Use Hazard assessment methods to define safety requirements
   - Preliminary analysis
   - Fault tree
   - Design Failure Modes & Effects Analyses
-- Conduct extensive testing to make sure safety requirement are met 
+- Conduct extensive testing to make sure safety requirements are met 
 
 **Waymo: Level of testing to ensure safety**
 - Simulation testing : more than 10 million miles of simulation per day
@@ -134,7 +134,7 @@ Major Hazard Sources :
      - Rear-end, intersection, road departure, lane change
      - This covers over 84% of all crashes
 
-- Real world driving
+- Real world driving testing
   - street driving test in place like : Mountain View California (near Google campus)
   - Start with small fleet, expand steadily
   - Already testing thousands of vehicle, with more on the way
@@ -189,8 +189,8 @@ All GM vehicles are equipped with two key safety thresholds
 
 **Analytical vs Data-driven : Definitions**
 - Analytical Safety : ensuring the systems work in the theory and meets safety requirements found by hazard assessment
-  - Ex: Space shuffle : where analytical failures were pegged at 1/100k flights
-  - Analytical Safety : can only provide guidance on safety performance of the self-driving systems due to the their complexity and variety situations/scenarios 
+  - Ex: Space Shuttle : where analytical failures were pegged at 1/100k flights
+  - Analytical Safety : can only provide guidance on safety performance of the self-driving systems due to the their complexity and variety situations/scenarios and need to be validated through experience.
 
 - Data-driven safety (through experiences): guarantee due to the fact that the system has performed autonomously without fail on the roads for a very larger numbers of kms
   - based on human lvel driven performance aiming to reduce accidents by 10x or 100x onver the performance of today's drivers
@@ -209,7 +209,7 @@ All GM vehicles are equipped with two key safety thresholds
   - In 2017, Waymo had:
     - Driven 563k km autonomously in California
     - 63 disengagements
-      - Causes : unwanted vehicle manoeuvres, perception discrepancies, hw issues, a single case of a reckless road user.
+      - Causes : unwanted vehicle manoeuvres, perception discrepancies, hw issues, sw issues, a single case of a reckless road user.
     - 1 disengagement every 9000 km
 
   - In 2017, GM had:
