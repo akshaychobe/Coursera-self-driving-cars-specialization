@@ -255,7 +255,7 @@ Software stack for self-driving cars :
 
 **Environment Mapping** : creates several different types of representation of the current environment around the autonomous car.
 
-Occupancy Grid Map : 
+1. Occupancy Grid Map : 
 - inputs: 
   - objects tracks
   - LIDAR data (used to construct the occupancy grid map)
@@ -263,13 +263,14 @@ Occupancy Grid Map :
 - outputs : 
   - Occupancy Grid Map : sets of cells of probability representing occupancy state (references : postural monitoring project)
 
-Localization Map : used by the localization module in order to improve ego* state estimation
+2. Localization Map : used by the localization module in order to improve ego* state estimation
 - inputs: 
   - LIDAR, camera data
 - outputs : 
   - Localization Map
 - sensors data are compared to the output while driving to determine the motion of car relative to the localiztion map
-Detailed Road Map : provides the road segments representing the driving env
+
+3. Detailed Road Map : provides the road segments representing the driving env
 - inputs: 
   - Prior Road Map
   - Vehicle position
