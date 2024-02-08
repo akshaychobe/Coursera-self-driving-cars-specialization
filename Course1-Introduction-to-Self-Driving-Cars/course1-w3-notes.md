@@ -315,7 +315,7 @@ FMEA a quantitave process
 **HAZOP - a variation on FMEA**
 - Hazard and operability study (HAZOP)
 - Qualitative brainstorming process, needs "imagination"
-- Uses guide words to trigger brainstorming (not, more, less etc.)
+- Uses guide words to trigger brainstorming (not, more, less,early, Late, etc.)
 - used earlier in the design process to guide the conceptual design phase .
   - Applied to complex 'processes'
     - Sufficient design information is available, and not likely to change significantly
