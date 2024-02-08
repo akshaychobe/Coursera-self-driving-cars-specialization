@@ -257,20 +257,20 @@ Software stack for self-driving cars :
 
 1. Occupancy Grid Map : 
 - inputs: 
-  - objects tracks
+  - objects track
   - LIDAR data (used to construct the occupancy grid map)
-    - after a filtering are applied in the input data to make it usable by the output
+    - after filtering are applied in the input data to make it usable by the output
 - outputs : 
-  - Occupancy Grid Map : sets of cells of probability representing occupancy state (references : postural monitoring project)
+  - Occupancy Grid Map: sets of cells of probability representing occupancy state (references: postural monitoring project)
 
-2. Localization Map : used by the localization module in order to improve ego* state estimation
+2. Localization Map: used by the localization module in order to improve ego* state estimation
 - inputs: 
   - LIDAR, camera data
 - outputs : 
   - Localization Map
-- sensors data are compared to the output while driving to determine the motion of car relative to the localiztion map
+- sensors data are compared to the output while driving to determine the motion of car relative to the localization map
 
-3. Detailed Road Map : provides the road segments representing the driving env
+3. Detailed Road Map: provides a map of the road segments representing the driving environment that the autonomous vehicle is currently driving through.
 - inputs: 
   - Prior Road Map
   - Vehicle position
@@ -278,12 +278,12 @@ Software stack for self-driving cars :
   - Static objects
 - outputs :
   - Detailed Road Map  
-This modules interacts constantly with the perception module to improve the performance of both modules
-- eg : the perception provides the static env need to update the detailed road map => prediction module => accurate dynamic object predictions
+This module interacts constantly with the perception module to improve the performance of both modules
+- eg: the perception provides the static env need to update the detailed road map => prediction module => accurate dynamic object predictions
 
-**Motion Planning** : challenging task and hard to solve in a single integrate processs. Needs to be decomposed into several layers of abstraction
+**Motion Planning**: This is a challenging task and hard to solve in a single integrated process. It needs to be decomposed into several layers of abstraction
 
--  Mission Planner (Top level) : defines a mission over entire horizon of the driving task
+-  Mission Planner (Top level): (Long term plan) defines a mission over the entire horizon of the driving task
    - inputs: 
      - Current Goal
      - Detailed Road Map
@@ -309,8 +309,8 @@ Local Planner : defines a specific path and velocity profile to drive
   - inputs:
     - Occupancy Grid    
     - behaviors Contraints 
-    - Vehicle operating limits
-    - Dynamic objects in the env
+    - Vehicle operating limits (position)
+    - Dynamic objects in the environment
   - outputs : 
     - Planned trajectory
 
@@ -336,12 +336,12 @@ Local Planner : defines a specific path and velocity profile to drive
 **System Supervisor**: continuously moritoring of all aspect of the ego-vehicle gives the appropriate warning in the event of the subsystem failure 
 
 - HW supervisor : 
-  - monitors all hw components to check for any fault : sensors failure, missing measurements.
-  - analyse hw output : camera or lidar failure 
-
+  -continuously monitors all the components to check for any fault: sensors failure, or missing measurements.
+  - analyze hw output: camera or lidar failure 
+    e.g.- if the camera sensor is blocked by a paper bag or snow is corrupting the LIDAR point cloud data.
 - SW supervisor : 
   - responsible for SW stack validation 
-  - output inconsistency results of all modules
+  - analyzing output inconsistency results of all modules
 
 
 ### Lesson 3 Supplementary Reading: Software Architecture
@@ -386,10 +386,10 @@ The gray rectangle is the grip map
 - uses LIDAR points
 - Occupancy by static object
   - Tree, buildings, curbs and so on
-- Curbs and other non drivable surfaces
-  - Dynamic objects are removed (by removing all lidar points that are found within the bounding boxes od DOD in the **perception** module)
+- Curbs and other nondrivable surfaces
+  - Dynamic objects are removed (by removing all lidar points that are found within the bounding boxes of DOD in the **perception** module)
 
-- each grid cell is represented by a probability value (100%: occupied or 0% : free)
+- each grid cell is represented by a probability value (100%: occupied or 0%: free)
   
 <img src="./resources/w2/grid-map.png" width="400" style="border:0px solid #FFFFFF; padding:1px; margin:1px">
 
