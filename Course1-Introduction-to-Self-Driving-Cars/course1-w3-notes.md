@@ -282,6 +282,8 @@ graph TD
   - Eliminate or reduce failures, starting with top priority 
 
 - FMEA : Steps
+
+  <img src="./resources/w2/Screenshot 2024-02-08 at 10.21.14 AM.png" width="600" style="border:0px solid #FFFFFF; padding:1px; margin:1px">
   1. Discuss with field experts : Create FMEA table
   2. List failure modes/probabilities
   3. For each failure mode => identify effects => **Severity?** (S), from 1 to 10(most severe)
