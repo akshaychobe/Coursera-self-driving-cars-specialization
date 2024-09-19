@@ -46,7 +46,6 @@ You’ll learn from a highly realistic driving environment that features 3D pede
 
 
 - [Link to enroll the Specialization from Coursera](https://www.coursera.org/specializations/self-driving-cars)
-- [My Certificate :) - You can do it too!](https://www.coursera.org/account/accomplishments/specialization/SVJ5YGT8AW88?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=s12n)
 
 
 > ## "Self-driving cars are the natural extension of active safety and obviously something we should do." — Elon Musk 
